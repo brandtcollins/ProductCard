@@ -1,0 +1,106 @@
+body {
+  background-color: #ecf2f8;
+  font-family: 'Manrope', sans-serif;
+}
+h1 {
+  color: #48556a;
+  font-size: 1.15rem;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  color: #48556a;
+}
+p {
+  color: #48556a;
+  font-size: 0.75rem;
+}
+svg {
+  padding: 8px;
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.container {
+  display: flex;
+  background-color: #fff;
+  width: 700px;
+  margin: 250px auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 50px #9eafc2;
+}
+.product img {
+  width: 100%;
+  height: 100%;
+  background-color: #6d7f97;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+.content {
+  padding: 20px;
+}
+.user,
+.avatar {
+  display: flex;
+  align-items: center;
+}
+.profile {
+  width: 80%;
+}
+.profile img {
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+  border-radius: 50%;
+}
+.profile p {
+  display: inline;
+  margin: 0;
+  color: #9eafc2;
+}
+.share {
+  background-color: #9eafc2;
+  position: relative;
+  margin: 0 auto;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.share:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltipText {
+  visibility: hidden;
+  color: #9eafc2;
+  width: 225px;
+  font-size: 0.85rem;
+  background-color: #48556a;
+  letter-spacing: 5px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 40%;
+  margin-left: -128px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltipText img {
+  padding: 0 10px;
+}
+.tooltipText:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}

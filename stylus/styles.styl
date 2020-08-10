@@ -1,0 +1,108 @@
+DarkGrayBlue = hsl(217, 19%, 35%)
+DarkBlue = hsl(214, 17%, 51%)
+GrayBlue = hsl(212, 23%, 69%)
+LightGrayBlue = hsl(210, 46%, 95%)
+RoundedCorner = 12px 
+Circle = 50%
+
+body 
+  background-color LightGrayBlue
+  font-family 'Manrope', sans-serif 
+
+h1 
+  color DarkGrayBlue 
+  font-size 1.15rem 
+
+h3
+  padding 0
+  margin 0
+  font-size .85rem
+  color DarkGrayBlue
+
+p 
+  color DarkGrayBlue 
+  font-size .75rem
+
+svg 
+  padding 8px
+  display block 
+  margin 0 auto
+  width 20px
+  height 20px
+  position absolute
+
+.container
+  display flex 
+  background-color white 
+  width 700px 
+  margin 250px auto 
+  border-radius RoundedCorner
+  box-shadow: 0px 0px 50px GrayBlue
+
+.product img 
+  width 100% 
+  height 100% 
+  background-color DarkBlue 
+  object-fit cover 
+  border-radius RoundedCorner 0 0 RoundedCorner 
+
+.content 
+  padding 20px   
+ 
+.user, .avatar
+    display flex
+    align-items center
+
+.profile
+  width 80%
+  & img
+    height 40px
+    width 40px
+    padding 15px
+    border-radius Circle 
+  & p 
+    display inline
+    margin 0
+    color GrayBlue
+
+.share 
+  background-color GrayBlue
+  position relative
+  margin 0 auto
+  height 30px
+  width 30px
+  border-radius Circle
+  &:hover .tooltipText
+    visibility visible
+    opacity 1
+
+.tooltipText
+  visibility hidden
+  color GrayBlue
+  width 225px
+  font-size .85rem
+  background-color DarkGrayBlue
+  letter-spacing 5px
+  text-align center
+  border-radius RoundedCorner
+  padding 15px
+  position absolute
+  z-index 1
+  bottom 150%
+  left 40%
+  margin-left -128px
+  opacity 0
+  transition opacity 0.3s
+  & img 
+    padding 0 10px
+  &:after
+    content ""
+    position absolute
+    top 100%
+    left 50%
+    margin-left -5px
+    border-width 9px
+    border-style solid
+    border-color #555 transparent transparent transparent
+
+ 
